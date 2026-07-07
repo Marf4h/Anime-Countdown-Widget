@@ -39,15 +39,15 @@ This bot only reads public anime metadata from AniList.
 Anime-Countdown-Widget/
 ├──docs
 ├   └──WIDGET_TUTORIAL_SETUP.md
-├── sync.js
-├── package.json
-├── README.md
+├── .env.example
 ├── LICENSE
 ├── NOTICE
-├── discord_portal.json
-├── .env.example
+├── README.md
 ├── config.example.json
-└── state.example.json
+├── discord_portal.json
+├── package.json
+├── state.example.json
+└── sync.js
 ```
 
 Files that should stay private and should not be uploaded anywhere:
@@ -118,7 +118,7 @@ This project requires Discord Social SDK / Profile Widget authorization.
 
 The full Discord setup is longer than the normal bot setup, so it is separated into its own guide:
 
-[Discord Widget Setup Guide](docs/DISCORD_WIDGET_SETUP.md)
+[Discord Widget Setup Guide](docs/WIDGET_TUTORIAL_SETUP.md)
 
 That guide covers:
 
@@ -611,6 +611,8 @@ Never share:
 * OAuth access tokens
 * Discord cookies
 * Redirected authorization URLs containing `#access_token=`
+
+## Widget Preset Showcase
 
 ## Credits
 

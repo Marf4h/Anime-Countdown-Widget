@@ -36,17 +36,18 @@ This bot only reads public anime metadata from AniList.
 ## Project Files
 
 ```txt
-anime-countdown-widget/
+Anime-Countdown-Widget/
 ├──docs
-   ├──WIDGET_TUTORIAL_SETUP.md
-├── sync.js
-├── package.json
-├── README.md
+├   └──WIDGET_TUTORIAL_SETUP.md
+├── .env.example
 ├── LICENSE
 ├── NOTICE
-├── .env.example
+├── README.md
 ├── config.example.json
-└── state.example.json
+├── discord_portal.json
+├── package.json
+├── state.example.json
+└── sync.js
 ```
 
 Files that should stay private and should not be uploaded on Anywhere:
