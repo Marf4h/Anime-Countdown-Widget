@@ -617,7 +617,7 @@ Never share:
 * Discord cookies
 * Redirected authorization URLs containing `#access_token=`
 
-## Widget Preset Showcase
+<h2 align="center">Widget Preset Showcase</h2>
 
 <div align="center">
   <table border="0" cellspacing="10" cellpadding="0">
