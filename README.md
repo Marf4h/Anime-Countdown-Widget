@@ -64,7 +64,7 @@ node_modules/
 ```
 
 ## Quick Start
-#### > This assumes you already completed the Discord Profile Widget setup.
+#### > This assumes you already completed the Discord Profile Widget setup. [Discord Widget Setup Guide](docs/DISCORD_WIDGET_SETUP.md)
 
 Clone the repository:
 

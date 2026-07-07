@@ -11,7 +11,7 @@
   "animeId": 123456,
   "titlePreference": "romaji",
   "manualTitle": null,
-  "firstEpisodeAt": "2026-07-10T00:30:00+00:00",
+  "firstEpisodeAt": "2026-07-10T00:30:00+09:00",
   "intervalDays": 7,
   "totalEpisodesOverride": null,
   "updateIntervalMinutes": 30,

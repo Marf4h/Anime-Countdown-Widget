@@ -4,7 +4,8 @@
   "description": "Discord Profile Widget bot for airing anime episode countdowns using AniList metadata.",
   "main": "sync.js",
   "scripts": {
-    "start": "node sync.js"
+    "start": "node sync.js",
+    "check": "node --check sync.js"
   },
   "keywords": [
     "discord",
