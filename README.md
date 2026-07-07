@@ -112,7 +112,7 @@ node sync.js
 
 After the bot is running, use `/setanime` in Discord to configure your anime.
 
-## Discord Profile Widget Setup
+## Setup & Installation
 
 This project requires Discord Social SDK / Profile Widget authorization.
 
