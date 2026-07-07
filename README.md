@@ -65,6 +65,7 @@ node_modules/
 
 ## Quick Start
 #### > This assumes you already completed the Discord Profile Widget setup.<br> > [Discord Widget Setup Guide](docs/DISCORD_WIDGET_SETUP.md) For the Full Guide
+- [Widget Preset Showcase](#widget-preset-showcase)
 
 Clone the repository:
 
