@@ -1202,11 +1202,11 @@ Never share:
     <tr>
       <td align="center" valign="top">
         <h4>Mini Profile Preview</h4>
-        <img src="assets/anime_cd_compact_preview.png" width="300" alt="Mini profile widget preview" />
+        <img src="../assets/anime_cd_compact_preview.png" width="300" alt="Mini profile widget preview" />
       </td>
       <td align="center" valign="top">
         <h4>Full Widget Layout</h4>
-        <img src="assets/anime_cd_full_preview.png" width="350" alt="Full statistics widget layout preview" />
+        <img src="../assets/anime_cd_full_preview.png" width="350" alt="Full statistics widget layout preview" />
       </td>
     </tr>
   </table>
