@@ -951,7 +951,7 @@ That means the token flow worked.
 
 DO NOT share that URL or token with anyone.
 
-Discord OAuth2 supports both authorization code grant and implicit grant. The implicit grant uses `response_type=token` and returns an `access_token` in the URL fragment after authorization. That token is sensitive, short-lived, and should be treated like a password. :contentReference[oaicite:1]{index=1}
+Discord OAuth2 supports both authorization code grant and implicit grant. The implicit grant uses `response_type=token` and returns an `access_token` in the URL fragment after authorization. That token is sensitive, short-lived, and should be treated like a password.
 
 ### Required scopes
 
