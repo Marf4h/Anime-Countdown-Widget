@@ -981,7 +981,7 @@ Try authorizing again with:
 scope=openid%20sdk.social_layer
 ```
 
-Discord’s Social SDK documentation lists `openid` and `sdk.social_layer` as the default communication scopes for Social SDK features. :contentReference[oaicite:2]{index=2}
+Discord’s Social SDK documentation lists `openid` and `sdk.social_layer` as the default communication scopes for Social SDK features.
 
 ### Make sure the redirect URI is added
 
