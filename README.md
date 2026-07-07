@@ -59,7 +59,7 @@ state.json
 node_modules/
 ```
 
-## Quick Start
+## Quick Start (If you already made the app/bot work)
 
 Clone the repository:
 
