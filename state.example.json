@@ -1,0 +1,21 @@
+{
+  "_notes": {
+    "setup": "This is an example state file. The bot will automatically create state.json when it starts.",
+    "warning": "Do not commit your real state.json. It contains runtime cache, sync history, and error/failsafe status.",
+    "doNotCommit": "Keep your real state.json out of GitHub."
+
+  },
+
+  "anilist": null,
+  "lastAniListSync": null,
+  "lastAniListSyncReason": null,
+  "lastPostReleaseSyncEpisode": null,
+  "lastWidgetPush": null,
+  "lastWidgetPayloadHash": null,
+  "lastWidgetSkip": null,
+  "lastWidgetSkipReason": null,
+  "lastDiscordError": null,
+  "periodicUpdatesDisabled": false,
+  "periodicUpdatesDisabledAt": null,
+  "periodicUpdatesDisabledReason": null
+}

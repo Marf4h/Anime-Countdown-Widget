@@ -1,0 +1,20 @@
+{
+  "_notes": {
+    "setup": "Copy this file to config.json before running the bot.",
+    "important": "Most anime-related fields can be changed later using Discord slash commands like /setanime, /settitle, /syncanime, and /setnext.",
+    "firstEpisodeAt": "Required for local countdown calculation. Use ISO format with timezone offset, for example: 2026-07-10T00:30:00+00:00.",
+    "updateIntervalMinutes": "How often the bot updates the Discord widget countdown. Recommended: 10 or 15. Do not set below 5.",
+    "postReleaseAniListSyncDelayMinutes": "How long to wait after an episode airs before syncing AniList again. Recommended: 30-60.",
+    "manualOverrides": "Optional. Use for delayed/skipped episodes or corrected airing dates. Can also be changed through bot commands."
+  },
+
+  "animeId": 123456,
+  "titlePreference": "romaji",
+  "manualTitle": null,
+  "firstEpisodeAt": "2026-07-10T00:30:00+00:00",
+  "intervalDays": 7,
+  "totalEpisodesOverride": null,
+  "updateIntervalMinutes": 30,
+  "postReleaseAniListSyncDelayMinutes": 45,
+  "manualOverrides": []
+}

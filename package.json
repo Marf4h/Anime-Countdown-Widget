@@ -1,0 +1,23 @@
+{
+  "name": "anime-countdown-widget",
+  "version": "1.0.0",
+  "description": "Discord Profile Widget bot for airing anime episode countdowns using AniList metadata.",
+  "main": "sync.js",
+  "scripts": {
+    "start": "node sync.js"
+  },
+  "keywords": [
+    "discord",
+    "anilist",
+    "anime",
+    "widget",
+    "countdown"
+  ],
+  "author": "Marf4h",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "discord.js": "^14.17.3",
+    "dotenv": "^16.4.7"
+  }
+}
