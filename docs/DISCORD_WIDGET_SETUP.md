@@ -1195,7 +1195,23 @@ Never share:
 * Discord cookies
 * Redirected authorization URLs containing `#access_token=`
 
-## Widget Preset Showcase
+<h2 align="center">Widget Preset Showcase</h2>
+
+<div align="center">
+  <table border="0" cellspacing="10" cellpadding="0">
+    <tr>
+      <td align="center" valign="top">
+        <h4>Mini Profile Preview</h4>
+        <img src="assets/anime_cd_compact_preview.png" width="300" alt="Mini profile widget preview" />
+      </td>
+      <td align="center" valign="top">
+        <h4>Full Widget Layout</h4>
+        <img src="assets/anime_cd_full_preview.png" width="350" alt="Full statistics widget layout preview" />
+      </td>
+    </tr>
+  </table>
+</div>
+<br>
 
 ## Credits
 
