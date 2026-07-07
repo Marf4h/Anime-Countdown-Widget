@@ -1185,13 +1185,17 @@ state.json
 node_modules/
 ```
 
-If you accidentally upload your `.env`, RESET YOUR DISCORD BOT TOKEN IMMEDATELY.
+If you accidentally upload your `.env`, reset your Discord bot token immediately.
 
-## Licence
+Never share:
 
-This project is licensed under the MIT Licence.
+* Discord bot tokens
+* Discord user tokens
+* OAuth access tokens
+* Discord cookies
+* Redirected authorization URLs containing `#access_token=`
 
-See the `LICENCE` file for details.
+## Widget Preset Showcase
 
 ## Credits
 
@@ -1203,3 +1207,9 @@ https://github.com/100000000000000000001/Ani-List-Widget
 ```
 
 The original project is licensed under the MIT Licence.
+
+## Licence
+
+This project is licensed under the MIT Licence.
+
+See the `LICENCE` file for details.
