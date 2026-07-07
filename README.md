@@ -37,14 +37,14 @@ This bot only reads public anime metadata from AniList.
 
 ```txt
 Anime-Countdown-Widget/
+├──docs
+   ├──WIDGET_TUTORIAL_SETUP.md
 ├── sync.js
 ├── package.json
-├── package-lock.json
 ├── README.md
 ├── LICENSE
 ├── NOTICE
 ├── discord_portal.json
-├── .gitignore
 ├── .env.example
 ├── config.example.json
 └── state.example.json
