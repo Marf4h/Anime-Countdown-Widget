@@ -4,6 +4,10 @@ A lightweight Node.js bot that updates a Discord Profile Widget with airing anim
 
 It can show the anime title, current aired episode count, next episode number, countdown to the next episode, AniList mean score, cover image, banner image, and episode progress.
 
+## What This Is For?
+
+This project is for users who want to show airing anime countdown data on a Discord Profile Widget. It is not a normal Discord status/Rich Presence bot.
+
 ## Features
 
 * Uses public AniList anime metadata
