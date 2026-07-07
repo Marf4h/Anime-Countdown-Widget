@@ -23,6 +23,24 @@ This project is for users who want to show airing anime countdown data on a Disc
 * Uses local countdown calculation to avoid unnecessary AniList API requests
 * Includes basic rate-limit and failure protection
 
+<h2 align="center">Widget Preset Showcase</h2>
+
+<div align="center">
+  <table border="0" cellspacing="10" cellpadding="0">
+    <tr>
+      <td align="center" valign="top">
+        <h4>Mini Profile Preview</h4>
+        <img src="assets/anime_cd_compact_preview.png" width="300" alt="Mini profile widget preview" />
+      </td>
+      <td align="center" valign="top">
+        <h4>Full Widget Layout</h4>
+        <img src="assets/anime_cd_full_preview.png" width="350" alt="Full statistics widget layout preview" />
+      </td>
+    </tr>
+  </table>
+</div>
+<br>
+
 ## Requirements
 
 Before using this project, make sure you have:
@@ -65,7 +83,6 @@ node_modules/
 
 ## Quick Start
 #### > This assumes you already completed the Discord Profile Widget setup.<br> > [Discord Widget Setup Guide](docs/DISCORD_WIDGET_SETUP.md) For the Full Guide
-- [Widget Preset Showcase](#widget-preset-showcase)
 
 Clone the repository:
 
@@ -617,24 +634,6 @@ Never share:
 * OAuth access tokens
 * Discord cookies
 * Redirected authorization URLs containing `#access_token=`
-
-<h2 align="center">Widget Preset Showcase</h2>
-
-<div align="center">
-  <table border="0" cellspacing="10" cellpadding="0">
-    <tr>
-      <td align="center" valign="top">
-        <h4>Mini Profile Preview</h4>
-        <img src="assets/anime_cd_compact_preview.png" width="300" alt="Mini profile widget preview" />
-      </td>
-      <td align="center" valign="top">
-        <h4>Full Widget Layout</h4>
-        <img src="assets/anime_cd_full_preview.png" width="350" alt="Full statistics widget layout preview" />
-      </td>
-    </tr>
-  </table>
-</div>
-<br>
 
 ## Credits
 
