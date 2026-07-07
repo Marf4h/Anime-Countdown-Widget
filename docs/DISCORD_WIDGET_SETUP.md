@@ -1,8 +1,6 @@
-# Anime Countdown Discord Widget
+# Discord Widget Setup Guide
 
-A lightweight Node.js bot that updates a Discord Profile Widget with airing anime information using public AniList metadata.
-
-It can show the anime title, current aired episode count, next episode number, countdown to the next episode, AniList mean score, cover image, and banner image.
+This guide explains how to create, authorize, install, and connect the Discord Developer Application used by Anime Countdown Discord Widget.
 
 ## Features
 
@@ -38,9 +36,9 @@ This bot only reads public anime metadata from AniList.
 ```txt
 Anime-Countdown-Widget/
 ├──docs
-├   └──WIDGET_TUTORIAL_SETUP.md
+│   └──DISCORD_WIDGET_SETUP.md
 ├── .env.example
-├── LICENSE
+├── LICENCE
 ├── NOTICE
 ├── README.md
 ├── config.example.json
@@ -88,7 +86,7 @@ This is the most important setup step.
 
 The bot needs a Discord Developer Application, but the application also needs to be connected to your Discord account and Profile Widget system.
 
-There are three parts:
+There are four parts:
 
 1. Create the Discord application and bot.
 2. Enable / set up Social SDK access.
@@ -1189,11 +1187,11 @@ node_modules/
 
 If you accidentally upload your `.env`, RESET YOUR DISCORD BOT TOKEN IMMEDATELY.
 
-## License
+## Licence
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT Licence.
 
-See the `LICENSE` file for details.
+See the `LICENCE` file for details.
 
 ## Credits
 
@@ -1204,4 +1202,4 @@ Ani-List-Widget
 https://github.com/100000000000000000001/Ani-List-Widget
 ```
 
-The original project is licensed under the MIT License.
+The original project is licensed under the MIT Licence.
