@@ -66,7 +66,9 @@ Anime-Countdown-Widget/
 └── sync.js
 ```
 
-Files that should stay private and should not be uploaded on Anywhere:
+## Security Notes
+
+Files that should stay private and should NOT be uploaded anywhere:
 
 ```txt
 .env
@@ -74,6 +76,16 @@ config.json
 state.json
 node_modules/
 ```
+
+If you accidentally upload your `.env`, reset your Discord bot token immediately.
+
+Never share:
+
+* Discord bot tokens
+* Discord user tokens
+* OAuth access tokens
+* Discord cookies
+* Redirected authorization URLs containing `#access_token=`
 
 ## Setup Tutorial
 
@@ -98,18 +110,34 @@ npm install
 
 This installs the required packages from `package.json`.
 
+If You Encounter This After running the Command :
+
+```powershell
+PS D:\Discord\Anime-Countdown-Widget> npm install
+
+added 54 packages, and audited 55 packages in 6s
+
+14 packages are looking for funding
+  run `npm fund` for details
+
+4 vulnerabilities (3 moderate, 1 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+```
+#### <b>NOTES :</b>
+> This warning can be normal after running `npm install`.
+>
+> Do **not** run `npm audit fix --force`.<br>
+> It may change major dependency versions and break the bot.
+
 ### 3. Create, authorize, and connect your Discord application
 
 This is the most important setup step.
 
 The bot needs a Discord Developer Application, but the application also needs to be connected to your Discord account and Profile Widget system.
-
-There are four parts:
-
-1. Create the Discord application and bot.
-2. Enable / set up Social SDK access.
-3. Authorize and install the application to your Discord account.
-4. Create or import the widget layout.
 
 ---
 
@@ -128,6 +156,19 @@ You will use this later in `.env`:
 ```env
 APPLICATION_ID=your_discord_application_id
 ```
+<b> :</b> The Application's name will show in the Widget
+<div align="center">
+  <table border="0" cellspacing="10" cellpadding="0">
+    <tr>
+      <td align="center" valign="top">
+        <img src="../assets/app_name_compact.png" width="250" alt="Mini profile widget preview" />
+      </td>
+      <td align="center" valign="top">
+        <img src="../assets/app_name_full.png" width="250" alt="Full statistics widget layout preview" />
+      </td>
+    </tr>
+  </table>
+</div>
 
 ---
 
@@ -160,10 +201,11 @@ To get your Discord user ID:
 
 1. Open Discord.
 2. Go to **User Settings**.
-3. Go to **Advanced**.
-4. Enable **Developer Mode**.
-5. Right-click your own Discord profile.
-6. Click **Copy User ID**.
+3. On the left sidebar, Scroll Down to the Bottom.
+4. Open **Developer**, is usually on top of **Log Out**.
+5. Enable **Developer Mode**
+6. Right-click your own Discord profile.
+7. Click **Copy User ID**.
 
 You will use this later in `.env`:
 
@@ -293,11 +335,11 @@ If the authorization worked, Discord may redirect you to a URL containing someth
 #access_token=...
 ```
 
-DO NOT share that redirected URL with anyone.
+**DO NOT share that redirected URL with anyone.**
 
-DO NOT copy the access token into your project.
+**DO NOT copy the access token into your project.**
 
-DO NOT put it in `.env`.
+**DO NOT put it in `.env`.**
 
 ---
 
@@ -448,7 +490,7 @@ After the import finishes, the widget layout should be added to your Discord app
 
 You can also create your own widget layout manually.
 
-Use the dynamic variable names from the **Widget Dynamic Variables** section of this README.
+Use the dynamic variable names from the **[Widget Dynamic Variables](#discord-widget-dynamic-variables)** section of this README.
 
 If you get stuck, look at the included `discord_portal.json` preset and use it as a reference.
 
@@ -534,7 +576,23 @@ cp config.example.json config.json
 
 You can either edit `config.json` manually, or start the bot and use `/setanime`.
 
-### 6. Configure your anime
+### 6. Start the bot
+
+Run:
+
+```bash
+npm start
+```
+
+Or:
+
+```bash
+node sync.js
+```
+
+If everything works, the bot should register slash commands and log in.
+
+### 7. Configure your anime
 
 The easiest way is to use the bot command:
 
@@ -552,7 +610,9 @@ Example:
 /setanime anime:Kimi ga Shinu first_episode:2026-07-07T20:30:00+08:00 total_episodes:13 title_preference:english
 ```
 
-### 7. Use the correct date format
+---
+
+#### 7.1 Use the correct date format
 
 Use ISO date format with timezone offset.
 
@@ -587,21 +647,29 @@ For Japan time, use:
 
 And for other timezones just search on google :)
 
-### 8. Start the bot
+### 8. Adding the Widget to your Discord Profile
 
-Run:
+#### 8.1 - Open your discord profile's Full page
+<img src="../assets/full_profile.png" width="500"></img>
 
-```bash
-npm start
-```
+---
 
-Or:
+#### 8.2 - A
+After opening your discord profile's Full page, you can click the "Add Widget", and by then you can identify your Widget through its name, The name of the Widget will Match with the Application's Name! In my case it is named "Countdown"
 
-```bash
-node sync.js
-```
+<img src="../assets/adding_widget_1.png" width="500"></img>
+<img src="../assets/adding_widget_3.png" width="200"></img>
 
-If everything works, the bot should register slash commands and log in.
+#### 8.2 - B
+If you don't have any widgets on your profile yet, you can easily find the Widget by identifying it though its name, The name of the Widget will Match with the Application's Name! In my case it is named "Countdown"
+
+<img src="../assets/adding_widget_2.png" width="500"></img>
+
+### 9. The End
+
+This is The End of the Installation Guide.<br>
+If something does not work, check the **[Config Notes](#config-notes)** section first to make sure your `.env`, `config.json`, and setup values are correct.<br>
+If the problem still happens, check the **[Troubleshooting](#troubleshooting)** Section.
 
 ## Discord Widget Dynamic Variables
 
@@ -740,6 +808,71 @@ Check current bot status:
 /status
 ```
 
+## Config Notes
+
+The real config file is:
+
+```txt
+config.json
+```
+
+The public example file is:
+
+```txt
+config.example.json
+```
+
+**DO NOT upload your `config.json` ANYWHERE.**
+
+Important config fields:
+
+| Field | Description |
+|---|---|
+| `animeId` | AniList anime ID |
+| `titlePreference` | Title style: `romaji`, `english`, or `native` |
+| `manualTitle` | Optional manual title override |
+| `firstEpisodeAt` | First episode airing time |
+| `intervalDays` | Days between episodes |
+| `totalEpisodesOverride` | Optional total episode override |
+| `updateIntervalMinutes` | How often the Discord widget refreshes |
+| `postReleaseAniListSyncDelayMinutes` | Delay before syncing AniList after an episode airs |
+| `manualOverrides` | Manual episode airing overrides |
+
+Recommended update interval:
+
+```json
+10
+```
+
+or:
+
+```json
+15
+```
+
+Do not set it too low.
+
+## State File
+
+The bot automatically creates:
+
+```txt
+state.json
+```
+
+This file stores runtime data such as:
+
+- Cached AniList metadata
+- Last AniList sync time
+- Last widget push time
+- Last skipped widget update
+- Discord API error information
+- Automatic update failsafe status
+
+You usually do not need to edit this file manually.
+
+**DO NOT Upload this file Anywhere!**
+
 ## How the Schedule Works
 
 The bot decides the next episode using this priority:
@@ -794,72 +927,7 @@ The bot syncs AniList metadata:
 
 The countdown itself is calculated locally and updated on an interval.
 
-This avoids making unnecessary AniList API requests.
-
-## Config Notes
-
-The real config file is:
-
-```txt
-config.json
-```
-
-The public example file is:
-
-```txt
-config.example.json
-```
-
-DO NOT upload your real `config.json` to GitHub.
-
-Important config fields:
-
-| Field | Description |
-|---|---|
-| `animeId` | AniList anime ID |
-| `titlePreference` | Title style: `romaji`, `english`, or `native` |
-| `manualTitle` | Optional manual title override |
-| `firstEpisodeAt` | First episode airing time |
-| `intervalDays` | Days between episodes |
-| `totalEpisodesOverride` | Optional total episode override |
-| `updateIntervalMinutes` | How often the Discord widget refreshes |
-| `postReleaseAniListSyncDelayMinutes` | Delay before syncing AniList after an episode airs |
-| `manualOverrides` | Manual episode airing overrides |
-
-Recommended update interval:
-
-```json
-10
-```
-
-or:
-
-```json
-15
-```
-
-Do not set it too low.
-
-## State File
-
-The bot automatically creates:
-
-```txt
-state.json
-```
-
-This file stores runtime data such as:
-
-- Cached AniList metadata
-- Last AniList sync time
-- Last widget push time
-- Last skipped widget update
-- Discord API error information
-- Automatic update failsafe status
-
-You usually do not need to edit this file manually.
-
-DO NOT Upload this file Anywhere!  
+This avoids making unnecessary AniList API requests.  
 
 ## Troubleshooting
 
@@ -966,7 +1034,7 @@ After authorizing, Discord should redirect to a URL that contains something like
 
 That means the token flow worked.
 
-DO NOT share that URL or token with anyone.
+**DO NOT share that URL or token with anyone.**
 
 Discord OAuth2 supports both authorization code grant and implicit grant. The implicit grant uses `response_type=token` and returns an `access_token` in the URL fragment after authorization. That token is sensitive, short-lived, and should be treated like a password.
 

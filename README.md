@@ -8,21 +8,7 @@ It can show the anime title, current aired episode count, next episode number, c
 
 This project is for users who want to show airing anime countdown data on a Discord Profile Widget. It is not a normal Discord status/Rich Presence bot.
 
-## Features
-
-* Uses public AniList anime metadata
-* No AniList login or AniList API key required
-* Supports anime search/autocomplete through `/setanime`
-* Supports AniList anime IDs
-* Shows current aired episode count
-* Shows next episode countdown
-* Shows AniList mean score, or `TBA` if unavailable
-* Supports AniList cover and banner images
-* Supports manual episode airing overrides for delays
-* Syncs AniList data on startup, command use, and after episode release
-* Uses local countdown calculation to avoid unnecessary AniList API requests
-* Includes basic rate-limit and failure protection
-
+<br>
 <h2 align="center">Widget Preset Showcase</h2>
 
 <div align="center">
@@ -40,6 +26,21 @@ This project is for users who want to show airing anime countdown data on a Disc
   </table>
 </div>
 <br>
+
+## Features
+
+* Uses public AniList anime metadata
+* No AniList login or AniList API key required
+* Supports anime search/autocomplete through `/setanime`
+* Supports AniList anime IDs
+* Shows current aired episode count
+* Shows next episode countdown
+* Shows AniList mean score, or `TBA` if unavailable
+* Supports AniList cover and banner images
+* Supports manual episode airing overrides for delays
+* Syncs AniList data on startup, command use, and after episode release
+* Uses local countdown calculation to avoid unnecessary AniList API requests
+* Includes basic rate-limit and failure protection
 
 ## Requirements
 
@@ -72,7 +73,9 @@ Anime-Countdown-Widget/
 └── sync.js
 ```
 
-Files that should stay private and should not be uploaded anywhere:
+## Security Notes
+
+Files that should stay private and should NOT be uploaded anywhere:
 
 ```txt
 .env
@@ -81,8 +84,20 @@ state.json
 node_modules/
 ```
 
+If you accidentally upload your `.env`, <b>reset your Discord bot token immediately.</b>
+
+Never share:
+
+* Discord bot tokens
+* Discord user tokens
+* OAuth access tokens
+* Discord cookies
+* Redirected authorization URLs containing `#access_token=`
+
 ## Quick Start
-#### > This assumes you already completed the Discord Profile Widget setup.<br> > [Discord Widget Setup Guide](docs/DISCORD_WIDGET_SETUP.md) For the Full Guide
+This is not the full setup.
+This is only the bot install/run part. <br>
+Read [Discord Widget Setup Guide](docs/DISCORD_WIDGET_SETUP.md) For the Full Guide
 
 Clone the repository:
 
@@ -137,10 +152,8 @@ After the bot is running, use `/setanime` in Discord to configure your anime.
 
 ## Setup & Installation
 
-This project requires Discord Social SDK / Profile Widget authorization.
-
-The full Discord setup is longer than the normal bot setup, so it is separated into its own guide:
-
+This project requires Discord Social SDK / Profile Widget authorization.<br>
+The full Discord setup is longer than the normal bot setup, so it is separated into its own guide:<br>
 [Discord Widget Setup Guide](docs/DISCORD_WIDGET_SETUP.md)
 
 That guide covers:
@@ -179,6 +192,8 @@ Never share your `.env` file.
 It contains your Discord bot token.
 
 ### `config.json`
+
+<b>You usually do not need to edit this file manually.</b>
 
 The real config file is:
 
@@ -239,7 +254,7 @@ This file stores runtime data such as:
 
 You usually do not need to edit this file manually.
 
-Do not upload this file anywhere.
+<b>DO NOT upload this file anywhere.</b>
 
 ## Setting an Anime
 
@@ -616,7 +631,7 @@ Fix the issue, then restart the bot.
 
 ## Security Notes
 
-Never upload these files:
+Files that should stay private and should not be uploaded anywhere:
 
 ```txt
 .env
@@ -625,7 +640,7 @@ state.json
 node_modules/
 ```
 
-If you accidentally upload your `.env`, reset your Discord bot token immediately.
+If you accidentally upload your `.env`, <b>reset your Discord bot token immediately.</b>
 
 Never share:
 
